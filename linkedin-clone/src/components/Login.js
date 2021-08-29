@@ -1,3 +1,7 @@
+/*
+author: Manpreet Sandhu
+File: Login.js
+*/
 import styled from 'styled-components'
 
 const Login = (props) => {
