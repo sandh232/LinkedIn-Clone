@@ -6,10 +6,14 @@ import styled from "styled-components";
 import LeftSide from "./LeftSide";
 import Main from "./Main";
 import RightSide from "./RightSide";
+import { Redirect } from "react-router-dom";
+import { connect } from "react-redux";
 
 const Home = (props) => {
   return (
     <Container>
+      {!props.user && <Redirect to="/"></Redirect>}
+
       <Section>
         <p>
           Urgent Hiring! Innovative, tech company seeks talented
@@ -80,4 +84,10 @@ const Layout = styled.div`
   }
 `;
 
-export default Home;
+const mapStateToProps = (state) => {
+  return {
+    user: state.userState.user,
+  };
+};
+
+export default connect(mapStateToProps)(Home);

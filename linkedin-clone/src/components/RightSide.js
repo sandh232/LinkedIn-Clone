@@ -37,10 +37,7 @@ const RightSide = (props) => {
       </FollowCard>
 
       <BannerCard>
-        <img
-          src="https://static-exp1.licdn.com/scds/common/u/images/promo/ads/li_evergreen_jobs_ad_300x250_v1.jpg"
-          alt=""
-        />
+        <img src="/images/photo-add.jpg" alt="" />
       </BannerCard>
     </Container>
   );
@@ -106,7 +103,7 @@ li{
 `;
 
 const Avatar = styled.div`
-  background-image: url("https://static-exp1.licdn.com/sc/h/1b4vl1r54ijmrmcyxzoidwmxs");
+  background-image: url("/images/hashtag-icon.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
