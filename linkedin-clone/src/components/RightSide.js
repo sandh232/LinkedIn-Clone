@@ -1,3 +1,7 @@
+/*
+author: Manpreet Sandhu
+File: RightSide.js
+*/
 import styled from "styled-components";
 
 const RightSide = (props) => {

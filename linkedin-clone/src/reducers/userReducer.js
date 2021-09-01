@@ -1,3 +1,7 @@
+/*
+author: Manpreet Sandhu
+File: userReducer.js
+*/
 import { SET_USER } from "../actions/actionType";
 
 const INITIAL_STATE = {

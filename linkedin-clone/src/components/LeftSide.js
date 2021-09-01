@@ -1,3 +1,7 @@
+/*
+author: Manpreet Sandhu
+File: LeftSide.js
+*/
 import { connect } from "react-redux";
 import styled from "styled-components";
 
@@ -8,7 +12,13 @@ const LeftSide = (props) => {
         <UserInfo>
           <CardBackground />
           <a>
-            <Photo></Photo>
+            <Photo>
+              {props.user ? (
+                <img src={props.user.photoURL} />
+              ) : (
+                <img src="/images/photo.svg" alt="" />
+              )}
+            </Photo>
             <Link>
               Welcome, {props.user ? props.user.displayName : "there"}!
             </Link>
@@ -88,9 +98,8 @@ const CardBackground = styled.div`
 
 const Photo = styled.div`
   box-shadow: none;
-  background-image: url("/images/photo.svg");
-  width: 72px;
-  height: 72px;
+  width: 75px;
+  height: 75px;
   box-sizing: border-box;
   background-clip: content-box;
   background-color: white;
@@ -100,6 +109,13 @@ const Photo = styled.div`
   border: 2px solid white;
   margin: -38px auto 12px;
   border-radius: 50%;
+
+  svg,
+  img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+  }
 `;
 
 const Link = styled.div`

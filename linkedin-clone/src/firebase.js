@@ -1,3 +1,7 @@
+/*
+author: Manpreet Sandhu
+File: firebase.js
+*/
 import firebase from "firebase";
 
 //firebase credentials
