@@ -6,12 +6,12 @@ import firebase from "firebase";
 
 //firebase credentials
 const firebaseConfig = {
-  apiKey: "AIzaSyCwFGaTIAUf58cC4fPyVBcCAf7K2cQVjqk",
-  authDomain: "linkedin-clone-54348.firebaseapp.com",
-  projectId: "linkedin-clone-54348",
-  storageBucket: "linkedin-clone-54348.appspot.com",
-  messagingSenderId: "525465740970",
-  appId: "1:525465740970:web:a04b225ac54d15f29292d3",
+  apiKey: "**** COPY FROM FIREBASE *****",
+  authDomain: "l**** COPY FROM FIREBASE *****",
+  projectId: "**** COPY FROM FIREBASE *****",
+  storageBucket: "**** COPY FROM FIREBASE *****",
+  messagingSenderId: "**** COPY FROM FIREBASE *****",
+  appId: "**** COPY FROM FIREBASE *****",
 };
 
 //initialize firebase App
